@@ -22,7 +22,10 @@ import logging
 from importlib import resources
 from typing import Any, Dict, List, Optional
 
-from mcp.server.fastmcp import FastMCP
+try:  # mcp 1.x
+    from mcp.server.fastmcp import FastMCP as _McpServer
+except ModuleNotFoundError:  # mcp 2.x: FastMCP przemianowany na MCPServer
+    from mcp.server.mcpserver import MCPServer as _McpServer
 
 __author__ = "Marek Porycki"
 __version__ = "1.0.0"
@@ -95,7 +98,7 @@ OBSZARY = {o["id"]: o for o in DANE["obszary"]}
 PYTANIA = {q["nr"]: q for q in DANE["pytania"]}
 POTRZEBY = {q["nr"]: q for q in DANE["pytania_potrzeb"]}
 
-mcp = FastMCP("skan-zgodnosci")
+mcp = _McpServer("skan-zgodnosci")
 
 
 def _stopka(wynik: Dict[str, Any]) -> Dict[str, Any]:
