@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "skan-zgodnosci-mcp"
+version = "1.0.0"
+description = "Serwer MCP z autorska skala przesiewowa oceny bezpieczenstwa informacji i zgodnosci (RODO, NIS2) dla firm w Polsce"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Marek Porycki", email = "kontakt@skanujfirme.pl" }]
+keywords = ["mcp", "rodo", "gdpr", "nis2", "compliance", "audyt", "poland", "security"]
+classifiers = [
+  "Intended Audience :: Information Technology",
+  "Natural Language :: Polish",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+dependencies = ["mcp>=1.2.0"]
+
+[project.urls]
+Homepage = "https://skanujfirme.pl"
+Narzedzie = "https://skanujfirme.pl/skan-bezpieczenstwa-firmy.html"
+Autor = "https://brokerbusiness.eu"
+
+[project.scripts]
+skan-zgodnosci-mcp = "skan_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["skan_mcp"]
+
+[tool.hatch.build]
+include = ["skan_mcp/*.py", "skan_mcp/methodology.json", "LICENSE", "README.md"]

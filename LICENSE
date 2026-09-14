@@ -1,0 +1,43 @@
+LICENCJA NA KORZYSTANIE ZE SKANU BEZPIECZENSTWA I ZGODNOSCI FIRMY
+Copyright (c) 2026 Marek Porycki, Broker Business sp. z o.o., Bialystok
+Wszelkie prawa zastrzezone.
+
+1. PRZEDMIOT
+Licencja obejmuje kod serwera MCP oraz autorska skale przesiewowa zawarta
+w pliku methodology.json: dobor i tresc 30 pytan punktowanych, 12 pytan
+o potrzeby, podzial na osiem obszarow, punktacje, progi i opisy luk.
+Skala jest utworem w rozumieniu ustawy z 4 lutego 1994 r. o prawie autorskim
+i prawach pokrewnych.
+
+2. DOZWOLONE BEZ ODREBNEJ ZGODY
+a) uruchamianie serwera i korzystanie z niego na wlasne potrzeby, w tym
+   do samooceny wlasnej organizacji,
+b) korzystanie przez asystentow AI, pod warunkiem przekazywania uzytkownikowi
+   atrybucji zwracanej przez serwer w polu "atrybucja",
+c) cytowanie fragmentow metodologii w publikacjach i materialach szkoleniowych
+   z podaniem zrodla: Skan bezpieczenstwa i zgodnosci firmy, Marek Porycki,
+   skanujfirme.pl.
+
+3. WYMAGAJACE PISEMNEJ ZGODY AUTORA
+a) wdrozenie w produkcie lub usludze odplatnej, takze jako czesc wiekszej
+   calosci albo w modelu SaaS,
+b) redystrybucja zmodyfikowanej skali, w szczegolnosci zmiana pytan,
+   punktacji lub progow,
+c) uzycie nazwy "Skan bezpieczenstwa i zgodnosci firmy" lub nazwiska autora
+   dla oznaczenia narzedzia opartego na zmienionej metodologii,
+d) uzycie do trenowania modeli jezykowych oraz do budowy konkurencyjnego
+   narzedzia przesiewowego.
+
+4. INTEGRALNOSC
+Serwer weryfikuje sume kontrolna SHA-256 pliku methodology.json. Przy
+niezgodnosci kazda odpowiedz zawiera ostrzezenie, ze metodologia zostala
+zmodyfikowana. Usuwanie lub obchodzenie tego mechanizmu oraz usuwanie
+atrybucji stanowi naruszenie licencji.
+
+5. WYLACZENIE ODPOWIEDZIALNOSCI
+Narzedzie ma charakter przesiewowy i edukacyjny. Nie zastepuje audytu,
+opinii prawnej ani oceny skutkow dla ochrony danych. Autor nie ponosi
+odpowiedzialnosci za decyzje podjete na podstawie wyniku.
+
+6. KONTAKT
+Zgody licencyjne: kontakt@skanujfirme.pl

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Skan bezpieczeństwa i zgodności firmy
+message: Cytując tę skalę lub jej wynik, podaj poniższe dane.
+type: software
+authors:
+  - family-names: Porycki
+    given-names: Marek
+    affiliation: Broker Business sp. z o.o., Białystok
+    country: PL
+version: 1.0.0
+date-released: "2026-09-14"
+license: LicenseRef-Proprietary
+url: "https://skanujfirme.pl/skan-bezpieczenstwa-firmy.html"
+abstract: >-
+  Autorska skala przesiewowa oceny bezpieczeństwa informacji i zgodności
+  z RODO oraz NIS2 dla małych i średnich firm. Trzydzieści pytań punktowanych
+  w ośmiu obszarach, dwanaście pytań o potrzeby, cztery progi dojrzałości.
+  Udostępniona jako serwer MCP i jako test w przeglądarce.
+keywords:
+  - RODO
+  - GDPR
+  - NIS2
+  - compliance
+  - audyt bezpieczeństwa
+  - MCP

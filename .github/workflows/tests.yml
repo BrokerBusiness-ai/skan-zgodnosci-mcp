@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Instalacja
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install pytest
+      - name: Testy
+        run: python -m pytest tests/ -q
+      - name: Kontrola integralnosci metodologii
+        run: python -c "from skan_mcp import server; assert server.DANE['_autorska'], 'Suma kontrolna methodology.json nie zgadza sie z wersja autorska'; print('OK, metodologia w wersji autorskiej')"

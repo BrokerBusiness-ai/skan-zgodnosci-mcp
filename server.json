@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.BrokerBusiness-ai/skan-zgodnosci",
+  "description": "Screening scale for information security and GDPR/NIS2 compliance for Polish SMEs: 30 scored questions across 8 areas, gap analysis with legal basis, and first remediation steps. No API key, no network calls.",
+  "status": "active",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/BrokerBusiness-ai/skan-zgodnosci-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://skanujfirme.pl/skan-bezpieczenstwa-firmy.html",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "skan-zgodnosci-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
